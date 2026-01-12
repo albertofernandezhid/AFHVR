@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CanController : MonoBehaviour
 {
-    private List<GameObject> _cans; // Lista de elementos de objetivos
+    private List<GameObject> _cans; 
     private int _score = 0;
     public TextMeshProUGUI scoreText;
 
@@ -14,14 +14,14 @@ public class CanController : MonoBehaviour
     }
     public void TargetHit(GameObject go)
     {
-        Debug.Log("Score: " + _score);
+        Debug.Log("Puntuación: " + _score);
         if (_cans.Contains(go))
         {
             _score += 10;
             _cans.Remove(go);
-            Debug.Log("Score " + _score);
+            Debug.Log("Puntuación " + _score);
             Destroy(go, 5);
-            scoreText.text = "Score: " + _score;
+            scoreText.text = "Puntuación: " + _score;
         }
     }
 }
