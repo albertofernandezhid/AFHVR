@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4300323957238574499}
   - component: {fileID: 2785662972550284956}
   - component: {fileID: 3686117807236524271}
+  - component: {fileID: 5254124234149898326}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -122,9 +123,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823167484112734161}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.05
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -136,11 +137,11 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 2
 --- !u!96 &3686117807236524271
 TrailRenderer:
   serializedVersion: 4
@@ -260,3 +261,16 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!114 &5254124234149898326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823167484112734161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab816420904f2fc46bbe5625a72c8a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletImpact
+  force: 10
