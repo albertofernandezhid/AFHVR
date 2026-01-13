@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SmallTown.unity
-    guid: 48ae26b70b4df00449f09d762efbd2f4
+    path: Assets/AFHVR.unity
+    guid: b475c139dd123534a9c2b7cda5de4d6f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 478a061a287f7ac4ba3846f15ecb97ac, type: 2}
